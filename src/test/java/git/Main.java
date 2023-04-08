@@ -1,4 +1,4 @@
-package gitPractice;
+package git;
 
 public class Main {
 
