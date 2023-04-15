@@ -13,11 +13,11 @@ public class GoogleSearch_StepDef {
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
     @Given("user at the Google search page")
     public void user_at_the_google_search_page() {
-        Driver.getDriver().get("https://www.google.com");
+      Driver.getDriver().get("https://www.google.com");
     }
     @When("user enter {string} at the search box and enter")
     public void user_enter_at_the_search_box_and_enter(String searchKeyWord) {
-googleSearchPage.searchBox.sendKeys(searchKeyWord + Keys.ENTER);
+    googleSearchPage.searchBox.sendKeys(searchKeyWord + Keys.ENTER);
 
     }
     @Then("user will see {string} is in google title.")
