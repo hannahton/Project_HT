@@ -12,7 +12,9 @@ public class QTSPage {
         PageFactory.initElements(Driver.getDriver(), this);
         }
 
-    @FindBy(xpath = "//button[@class='drift-widget-naked-button drift-widget-message-close-button drift-widget-close-button--align-right']")
+        @FindBy(xpath = "//iframe[@class='drift-frame-controller']")
+        public WebElement frame;
+    @FindBy(xpath = "//button[@aria-label='Close Drift Widget messenger preview overlay']")
         public WebElement messageButton;
     @FindBy(xpath = "(//a[@href='/data-centers'])[1]")
     public WebElement dataCenterModule;
